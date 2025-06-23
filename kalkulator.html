@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Keren</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kalkulator</h1> </header>
+    <div class="calculator">
+        <input type="text" id="display" disabled placeholder="0">
+        <div class="buttons">
+            <button class="btn" onclick="appendValue('7')" data-animation-delay="0.1s">7</button>
+            <button class="btn" onclick="appendValue('8')" data-animation-delay="0.15s">8</button>
+            <button class="btn" onclick="appendValue('9')" data-animation-delay="0.2s">9</button>
+            <button class="btn operator" onclick="appendValue('/')" data-animation-delay="0.25s">/</button>
+
+            <button class="btn" onclick="appendValue('4')" data-animation-delay="0.3s">4</button>
+            <button class="btn" onclick="appendValue('5')" data-animation-delay="0.35s">5</button>
+            <button class="btn" onclick="appendValue('6')" data-animation-delay="0.4s">6</button>
+            <button class="btn operator" onclick="appendValue('*')" data-animation-delay="0.45s">X</button>
+
+            <button class="btn" onclick="appendValue('1')" data-animation-delay="0.5s">1</button>
+            <button class="btn" onclick="appendValue('2')" data-animation-delay="0.55s">2</button>
+            <button class="btn" onclick="appendValue('3')" data-animation-delay="0.6s">3</button>
+            <button class="btn operator" onclick="appendValue('-')" data-animation-delay="0.65s">-</button>
+            
+            <button class="btn" onclick="appendValue('0')" data-animation-delay="0.7s">0</button>
+            <button class="btn" onclick="appendValue('.')">.</button>
+            <button class="btn operator" onclick="calculate()">=</button>
+            <button class="btn operator" onclick="appendValue('+')">+</button>
+            
+            <button class="btn clear" onclick="clearDisplay()" style="grid-column: span 4;" data-animation-delay="0.8s">C</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
